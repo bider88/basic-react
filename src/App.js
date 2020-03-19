@@ -2,6 +2,7 @@ import React from 'react';
 import './App.scss';
 import Counter from './components/Counter'
 import Cat from './components/Cat'
+import Manager from './components/Manager'
 
 function App() {
 
@@ -18,12 +19,12 @@ function App() {
         </div>
       </nav>
       <div className="App">
+        { /* Mutando el estado de componente con una función */}
         <Counter/>
-        <Cat
-          name="Garfield"
-          age="2 años"
-          { ...infoCat }
-        />
+        { /* Usando el operador spread para pasar props */}
+        <Cat name="Garfield" age="2 años" { ...infoCat } />
+        { /* Manejando eventos del mouse */}
+        <Manager/>
       </div>
     </div>
   );
