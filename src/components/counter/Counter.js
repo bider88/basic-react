@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Counter.module.scss'
+// import styles from './Counter.module.scss'
 
 export default class Counter extends React.Component {
 
@@ -47,7 +47,7 @@ export default class Counter extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="Component">
         <h1>Mutando el estado de componente con una función</h1>
         <h3>{ this.state.video.title }</h3>
         <div className="buttons">
