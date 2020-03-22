@@ -4,6 +4,7 @@ import Counter from './components/Counter'
 import Cat from './components/Cat'
 import Manager from './components/Manager'
 import Input from './components/Input'
+import Anchor from './components/Anchor'
 
 function App() {
 
@@ -28,6 +29,8 @@ function App() {
         <Manager/>
         { /* Eventos del input */}
         <Input/>
+        { /* Conservar eventos con React*/}
+        <Anchor/>
       </div>
     </div>
   );
