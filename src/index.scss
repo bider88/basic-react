@@ -5,12 +5,13 @@
 
 body {
   margin: 0;
+  margin-top: 62px;
 }
 
 h2, h3, h4, h5, h6 {
   color: $primaryColor;
 }
 
-.Component {
-  margin-bottom: 2.5em;
+.card {
+  margin-bottom: 1.2em;
 }

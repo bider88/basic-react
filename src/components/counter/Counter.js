@@ -47,12 +47,13 @@ export default class Counter extends React.Component {
 
   render() {
     return (
-      <div className="Component">
-        <h1>Mutando el estado de componente con una función</h1>
-        <h3>{ this.state.video.title }</h3>
-        <div className="buttons">
+      <div className='card'>
+        <div className='card-content'>
+          <p className='title'>Mutando el estado de componente con una función</p>
+          <div className="buttons">
           <button className="button is-primary" onClick= { this.add }>Clics ({ this.state.video.clicks })</button>
           <button className="button is-info" onClick= { this.reset }>Reset</button>
+        </div>
         </div>
       </div>
     )

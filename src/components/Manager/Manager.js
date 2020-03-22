@@ -24,11 +24,13 @@ export default class Manager extends React.Component {
     }
 
     return (
-      <div className="Component">
-        <h1>Manejando eventos del mouse </h1>
-        <div style= { styles } onMouseMove={ this.manager }>
-          <div>x: { this.state.x } </div>
-          <div>y: { this.state.y } </div>
+      <div className='card'>
+        <div className='card-content'>
+          <p className='title'>Manejando eventos del mouse</p>
+          <div style= { styles } onMouseMove={ this.manager }>
+            <div>x: { this.state.x } </div>
+            <div>y: { this.state.y } </div>
+          </div>
         </div>
       </div>
     )
