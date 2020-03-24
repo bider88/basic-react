@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default class Anchor extends React.Component {
+export default class InputEvent extends React.Component {
 
   state= {
-    color: 'blue'
+    color: 'red'
   }
 
   handlerChange = (event) => {

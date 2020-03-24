@@ -4,7 +4,7 @@ import Counter from './components/Counter'
 import Cat from './components/Cat'
 import Manager from './components/Manager'
 import Input from './components/Input'
-import Anchor from './components/Anchor'
+import InputEvent from './components/InputEvent'
 
 function App() {
 
@@ -30,7 +30,7 @@ function App() {
         { /* Eventos del input */}
         <Input/>
         { /* Conservar eventos con React*/}
-        <Anchor/>
+        <InputEvent/>
       </div>
     </div>
   );
