@@ -6,6 +6,7 @@ import Manager from './components/Manager'
 import Input from './components/Input'
 import InputEvent from './components/InputEvent'
 import ConditionalRender from './components/ConditionalRender';
+import InjectHtml from './components/InjectHtml';
 
 function App() {
 
@@ -34,6 +35,8 @@ function App() {
         <InputEvent/>
         { /* Renderizados condicionales */}
         <ConditionalRender greeting title='Renderizados condicionales'/>
+        { /* Inyectando html */}
+        <InjectHtml/>
       </div>
     </div>
   );
