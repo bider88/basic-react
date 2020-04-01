@@ -5,6 +5,7 @@ import Cat from './components/Cat'
 import Manager from './components/Manager'
 import Input from './components/Input'
 import InputEvent from './components/InputEvent'
+import ConditionalRender from './components/ConditionalRender';
 
 function App() {
 
@@ -31,6 +32,8 @@ function App() {
         <Input/>
         { /* Conservar eventos con React*/}
         <InputEvent/>
+        { /* Renderizados condicionales */}
+        <ConditionalRender greeting title='Renderizados condicionales'/>
       </div>
     </div>
   );
