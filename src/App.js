@@ -7,6 +7,7 @@ import Input from './components/Input'
 import InputEvent from './components/InputEvent'
 import ConditionalRender from './components/ConditionalRender';
 import InjectHtml from './components/InjectHtml';
+import ChildrenProp from './components/ChildrenProp';
 
 function App() {
 
@@ -37,6 +38,8 @@ function App() {
         <ConditionalRender greeting title='Renderizados condicionales'/>
         { /* Inyectando html */}
         <InjectHtml/>
+        { /* Prop especial children */}
+        <ChildrenProp/>
       </div>
     </div>
   );
