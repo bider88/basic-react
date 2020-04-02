@@ -8,6 +8,7 @@ import InputEvent from './components/InputEvent'
 import ConditionalRender from './components/ConditionalRender';
 import InjectHtml from './components/InjectHtml';
 import ChildrenProp from './components/ChildrenProp';
+import Fragment from './components/Fragment';
 
 function App() {
 
@@ -40,6 +41,8 @@ function App() {
         <InjectHtml/>
         { /* Prop especial children */}
         <ChildrenProp/>
+        { /* Elementos sin etiquetas con Fragment */}
+        <Fragment/>
       </div>
     </div>
   );
