@@ -1,18 +1,30 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+const noop = () => {}
 export default class ValidPropTypes extends React.Component {
 
   // Valida que el tipo de dato sea el esperado
   static propTypes = {
-    name: PropTypes.string,
+    name: PropTypes.string.isRequired,
     twitter: PropTypes.string,
     bio: PropTypes.string,
-    age: PropTypes.number
+    age: PropTypes.number,
+    country: PropTypes.string.isRequired
+  }
+
+  // Valores por defecto si no se paso por las props
+  static defaultProps = {
+    country: 'Mexico',
+    greeting: noop
+  }
+
+  greeting = () => {
+    this.props.greeting()
   }
 
   render() {
-    const {name, twitter, bio, age} = this.props
+    const {name, twitter, bio, age, country} = this.props
     return (
       <div className='card'>
         <div className='card-content'>
@@ -29,6 +41,8 @@ export default class ValidPropTypes extends React.Component {
           <p><a href={ twitter } target='_blank' rel='noopener noreferrer'>{ twitter }</a></p>
           <p>{ bio }</p>
           <p>{ age }</p>
+          <p>{ country }</p>
+          <button className='button is-primary' onClick= { this.greeting }>Mostrar modal</button>
         </div>
       </div>
     )
