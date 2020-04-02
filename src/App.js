@@ -10,6 +10,7 @@ import InjectHtml from './components/InjectHtml';
 import ChildrenProp from './components/ChildrenProp';
 import Fragment from './components/Fragment';
 import PortalModal from './components/PortalModal';
+import PropTypes from './components/ValidPropTypes';
 
 function App() {
 
@@ -46,6 +47,8 @@ function App() {
         <Fragment/>
         { /* Portals de React */}
         <PortalModal/>
+        { /* Validar datos del props con prop-types */}
+        <PropTypes name='Irving Didier' twitter='https://twitter.com/didiersa' bio='Frontend developer' age={31}/>
       </div>
     </div>
   );
