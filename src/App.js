@@ -9,6 +9,7 @@ import ConditionalRender from './components/ConditionalRender';
 import InjectHtml from './components/InjectHtml';
 import ChildrenProp from './components/ChildrenProp';
 import Fragment from './components/Fragment';
+import PortalModal from './components/PortalModal';
 
 function App() {
 
@@ -43,6 +44,8 @@ function App() {
         <ChildrenProp/>
         { /* Elementos sin etiquetas con Fragment */}
         <Fragment/>
+        { /* Portals de React */}
+        <PortalModal/>
       </div>
     </div>
   );
