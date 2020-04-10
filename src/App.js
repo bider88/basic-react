@@ -11,6 +11,8 @@ import ChildrenProp from './components/ChildrenProp';
 import Fragment from './components/Fragment';
 import PortalModal from './components/PortalModal';
 import PropTypes from './components/ValidPropTypes';
+import SectionComponent from './components/common/SectionComponent';
+import NavComponent from './components/common/NavComponent';
 
 function App() {
 
@@ -21,12 +23,9 @@ function App() {
 
   return (
     <div>
-      <nav className="navbar is-fixed-top is-dark">
-        <div className="navbar-brand">
-          <span className="navbar-item">Basic Reacts</span>
-        </div>
-      </nav>
-      <div className="App">
+      <NavComponent/>
+      <SectionComponent type='primary' title='React Core' subtitle='Entendiendo los principios de React' medium bold/>
+      <div className="container">
         { /* Mutando el estado de componente con una función */}
         <Counter/>
         { /* Usando el operador spread para pasar props */}
@@ -49,6 +48,10 @@ function App() {
         <PortalModal/>
         { /* Validar datos del props con prop-types */}
         <PropTypes name='Irving Didier' twitter='https://twitter.com/didiersa' bio='Frontend developer' age={31}/>
+      </div>
+      <SectionComponent type='info' title='Iterando listas' subtitle='Como recorrer arrays, objetos, componentes y/o listas' medium bold/>
+      <div className='container'>
+      
       </div>
     </div>
   );
