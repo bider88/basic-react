@@ -42,7 +42,6 @@ export default class ValidPropTypes extends React.Component {
           <p>{ bio }</p>
           <p>{ age }</p>
           <p>{ country }</p>
-          <button className='button is-primary' onClick= { this.greeting }>Mostrar modal</button>
         </div>
       </div>
     )

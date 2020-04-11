@@ -13,6 +13,7 @@ import PortalModal from './components/PortalModal';
 import PropTypes from './components/ValidPropTypes';
 import SectionComponent from './components/common/SectionComponent';
 import NavComponent from './components/common/NavComponent';
+import IterateLists from './components/IterateLists';
 
 function App() {
 
@@ -51,7 +52,7 @@ function App() {
       </div>
       <SectionComponent type='info' title='Iterando listas' subtitle='Como recorrer arrays, objetos, componentes y/o listas' medium bold/>
       <div className='container'>
-      
+        <IterateLists/>
       </div>
     </div>
   );

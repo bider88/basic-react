@@ -24,10 +24,12 @@ export default class Fragment extends Component {
       <div className='card'>
         <div className='card-content'>
           <p className='title'>Elementos sin etiquetas con Fragment</p>
-          <ol type="1">
-            <Devices></Devices>
-            <Office></Office>
-          </ol>
+          <div className="content">
+            <ol type="1">
+              <Devices></Devices>
+              <Office></Office>
+            </ol>
+          </div>
         </div>
       </div>
     )
