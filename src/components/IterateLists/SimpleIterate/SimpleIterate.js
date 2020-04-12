@@ -20,7 +20,7 @@ export default class SimpleIterate extends React.Component {
           <div className="content">
             <ol type="i">
               {
-                fruits.map( fruit => <li>fruit</li> )
+                fruits.map( (fruit, index) => <li key={ index }>{ fruit }</li> )
               }
             </ol>
           </div>
