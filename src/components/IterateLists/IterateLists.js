@@ -3,6 +3,7 @@ import SimpleIterate from './SimpleIterate'
 import ObjectIterate from './ObjectIterate'
 import PropertyIterate from './PropertyIterate'
 import ComponentIterate from './ComponentIterate'
+import SendDataIterate from './SendDataIterate'
 
 export default class IterateLists extends React.Component {
   render() {
@@ -16,6 +17,8 @@ export default class IterateLists extends React.Component {
         <PropertyIterate/>
         { /* Iterando componentes */ }
         <ComponentIterate/>
+        { /* Pasar datos al iterar listas */ }
+        <SendDataIterate/>
       </div>
     )
   }
