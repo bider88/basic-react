@@ -18,6 +18,7 @@ import Refs from './components/Refs';
 import GraphRefs from './components/GraphRefs';
 import FancyInputRef from './components/FancyInputRef';
 import InputNoControlRef from './components/InputNoControlRef';
+import InputManagedForm from './components/InputManagedForm';
 
 function App() {
 
@@ -67,8 +68,13 @@ function App() {
         { /* Integrar librerías de terceros usando las refs de React / Debemos de instalar chart.js con npm */}
         <FancyInputRef/>
         { /* Reenvío de la props especial ref con forwardref */}
+      </div>
+      <SectionComponent type='success' title='Formularios' subtitle='Manejando formularios con React' medium bold/>
+      <div className="container">
         <InputNoControlRef/>
-        { /* Inputs no controlados (Refs) */}
+        { /* Inputs no controlados con form */}
+        <InputManagedForm/>
+        { /* Manejando input controlados con React */}
       </div>
     </div>
   );
