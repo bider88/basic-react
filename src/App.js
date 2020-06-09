@@ -21,6 +21,7 @@ import InputNoControlRef from './components/InputNoControlRef';
 import InputManagedForm from './components/InputManagedForm';
 import SelectForm from './components/SelectForm';
 import CheckBoxForm from './components/CheckBoxForm';
+import RequestsHTTP from './components/RequestsHTTP';
 
 function App() {
 
@@ -81,6 +82,11 @@ function App() {
         { /* Formulario con opciones de selección */}
         <CheckBoxForm/>
         { /* Etiqueta checkbox con form */}
+      </div>
+      <SectionComponent type='warning' title='Peticiones HTTP' subtitle='Integrando peticiones HTPP con React' medium bold/>
+      <div className="container">
+        <RequestsHTTP/>
+        { /* Realizando peticiones HTTP */}
       </div>
     </div>
   );
