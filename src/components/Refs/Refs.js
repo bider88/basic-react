@@ -4,9 +4,9 @@ export default class Refs extends React.Component {
 
   entry = React.createRef();
 
-  componentDidMount() {
-    this.focus()
-  }
+  // componentDidMount() {
+  //   this.focus()
+  // }
 
   focus = () => {
     console.log('ref entry', this.entry)

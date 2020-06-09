@@ -17,6 +17,7 @@ import IterateLists from './components/IterateLists';
 import Refs from './components/Refs';
 import GraphRefs from './components/GraphRefs';
 import FancyInputRef from './components/FancyInputRef';
+import InputNoControlRef from './components/InputNoControlRef';
 
 function App() {
 
@@ -57,12 +58,17 @@ function App() {
       <div className='container'>
         <IterateLists/>
         { /* Iterando listas */}
+      </div>
+      <SectionComponent type='danger' title='Refs con react' subtitle='Accediendo a las refrencias de elementos con react' medium bold/>
+      <div className="container">
         <Refs/>
         { /* Usando las refs con React */}
         <GraphRefs/>
         { /* Integrar librerías de terceros usando las refs de React / Debemos de instalar chart.js con npm */}
         <FancyInputRef/>
         { /* Reenvío de la props especial ref con forwardref */}
+        <InputNoControlRef/>
+        { /* Inputs no controlados (Refs) */}
       </div>
     </div>
   );
