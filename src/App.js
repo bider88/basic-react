@@ -20,6 +20,7 @@ import FancyInputRef from './components/FancyInputRef';
 import InputNoControlRef from './components/InputNoControlRef';
 import InputManagedForm from './components/InputManagedForm';
 import SelectForm from './components/SelectForm';
+import CheckBoxForm from './components/CheckBoxForm';
 
 function App() {
 
@@ -78,6 +79,8 @@ function App() {
         { /* Manejando input controlados con React */}
         <SelectForm/>
         { /* Formulario con opciones de selección */}
+        <CheckBoxForm/>
+        { /* Etiqueta checkbox con form */}
       </div>
     </div>
   );
