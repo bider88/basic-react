@@ -14,6 +14,7 @@ import PropTypes from './components/ValidPropTypes';
 import SectionComponent from './components/common/SectionComponent';
 import NavComponent from './components/common/NavComponent';
 import IterateLists from './components/IterateLists';
+import Refs from './components/Refs';
 
 function App() {
 
@@ -53,6 +54,7 @@ function App() {
       <SectionComponent type='info' title='Iterando listas' subtitle='Como recorrer arrays, objetos, componentes y/o listas' medium bold/>
       <div className='container'>
         <IterateLists/>
+        <Refs></Refs>
       </div>
     </div>
   );
