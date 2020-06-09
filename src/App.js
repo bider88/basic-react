@@ -15,6 +15,7 @@ import SectionComponent from './components/common/SectionComponent';
 import NavComponent from './components/common/NavComponent';
 import IterateLists from './components/IterateLists';
 import Refs from './components/Refs';
+import GraphRefs from './components/GraphRefs';
 
 function App() {
 
@@ -54,7 +55,11 @@ function App() {
       <SectionComponent type='info' title='Iterando listas' subtitle='Como recorrer arrays, objetos, componentes y/o listas' medium bold/>
       <div className='container'>
         <IterateLists/>
-        <Refs></Refs>
+        { /* Iterando listas */}
+        <Refs/>
+        { /* Usando las refs con React */}
+        <GraphRefs/>
+        { /* Integrar librerías de terceros usando las refs de React / Debemos de instalar chart.js con npm*/}
       </div>
     </div>
   );
