@@ -2,26 +2,21 @@ import React from 'react'
 
 class InputNoControl extends React.Component {
 
-  name = React.createRef()
-  email = React.createRef()
-
-  handledClick = () => {
-    const name = this.name.current.value
-    const email = this.email.current.value
+  handledSubmit = (event) => {
+    event.preventDefault()
+    const name = event.target[0].value
+    const email = event.target[1].value
 
     this.props.onSend({ name, email })
   }
 
   render() { 
     return (
-      <div className='card'>
-        <div className='card-content'>
-          <p className='title'>Inputs no controlados (Refs)</p>
-          <input className='input' placeholder='Nombre' type="text" name="name" ref={this.name}/>
-          <input className='input' placeholder='Correo electrónico' type="text" name="email" ref={this.email}/>
-          <button className="button" onClick={this.handledClick}>Enviar</button>
-        </div>
-      </div>
+      <form onSubmit={this.handledSubmit}>
+        <input className='input' placeholder='Nombre' type="text" name="name"/>
+        <input className='input' placeholder='Correo electrónico' type="text" name="email"/>
+        <button className="button">Enviar</button>
+      </form>
     )
   }
 
@@ -38,7 +33,7 @@ class InputNoControlRef extends React.Component {
     return (
       <div className='card'>
         <div className='card-content'>
-          <p className='title'>Inputs no controlados (Refs)</p>
+          <p className='title'>Inputs no controlados con formularios</p>
           <InputNoControl onSend={this.send}/>
         </div>
       </div>
