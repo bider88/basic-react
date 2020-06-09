@@ -16,6 +16,7 @@ import NavComponent from './components/common/NavComponent';
 import IterateLists from './components/IterateLists';
 import Refs from './components/Refs';
 import GraphRefs from './components/GraphRefs';
+import FancyInputRef from './components/FancyInputRef';
 
 function App() {
 
@@ -59,7 +60,9 @@ function App() {
         <Refs/>
         { /* Usando las refs con React */}
         <GraphRefs/>
-        { /* Integrar librerías de terceros usando las refs de React / Debemos de instalar chart.js con npm*/}
+        { /* Integrar librerías de terceros usando las refs de React / Debemos de instalar chart.js con npm */}
+        <FancyInputRef/>
+        { /* Reenvío de la props especial ref con forwardref */}
       </div>
     </div>
   );
