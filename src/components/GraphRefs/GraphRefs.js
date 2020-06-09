@@ -53,7 +53,7 @@ class GraphRefs extends React.Component {
     return (
       <div className='card'>
         <div className='card-content'>
-          <p className='title'>Integrar librerías de terceros usando las refs de React</p>
+          <p className='title'>Integrar librerías de terceros usando las refs de React!</p>
           <canvas ref={this.graphic}></canvas>
         </div>
       </div>
