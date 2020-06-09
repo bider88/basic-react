@@ -19,6 +19,7 @@ import GraphRefs from './components/GraphRefs';
 import FancyInputRef from './components/FancyInputRef';
 import InputNoControlRef from './components/InputNoControlRef';
 import InputManagedForm from './components/InputManagedForm';
+import SelectForm from './components/SelectForm';
 
 function App() {
 
@@ -75,6 +76,8 @@ function App() {
         { /* Inputs no controlados con form */}
         <InputManagedForm/>
         { /* Manejando input controlados con React */}
+        <SelectForm/>
+        { /* Formulario con opciones de selección */}
       </div>
     </div>
   );
