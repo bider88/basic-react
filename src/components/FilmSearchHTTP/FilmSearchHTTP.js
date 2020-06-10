@@ -8,26 +8,21 @@ class FilmSearchHTTP extends Component {
   }
   url = 'http://www.omdbapi.com/?i=tt3896198&apikey=9cd7bf96'
 
-  handleSubmit = (event) => {
+  handleSubmit = async (event) => {
     event.preventDefault()
 
     this.toggleLoading()
 
     const title = event.target[0].value
 
-    axios.get(this.url, {
+    const { data: movie } = await axios.get(this.url, {
       params: {
         t: title
       }
     })
-    .then(({ data }) => {
-      this.setState({ movie: data })
-      this.toggleLoading()
-    })
-    .catch(error => {
-      console.error(error)
-      this.toggleLoading(false)
-    })
+    
+    this.setState({ movie })
+    this.toggleLoading()
   }
 
   toggleLoading = (isLoading) => {
@@ -64,7 +59,11 @@ class FilmSearchHTTP extends Component {
                   <div className="media">
                     <div className="media-left">
                       <figure className="image is-48x48">
-                        <img src={ movie?.Poster } alt={ movie?.Title } />
+                      {
+                        movie?.Poster !== 'N/A' && (
+                          <img src={ movie?.Poster } alt={ movie?.Title } />
+                        )
+                      }
                       </figure>
                     </div>
                     <div className="media-content">
