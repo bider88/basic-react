@@ -22,6 +22,7 @@ import InputManagedForm from './components/InputManagedForm';
 import SelectForm from './components/SelectForm';
 import CheckBoxForm from './components/CheckBoxForm';
 import RequestsHTTP from './components/RequestsHTTP';
+import FilmSearchHTTP from './components/FilmSearchHTTP';
 
 function App() {
 
@@ -87,6 +88,8 @@ function App() {
       <div className="container">
         <RequestsHTTP/>
         { /* Realizando peticiones HTTP */}
+        <FilmSearchHTTP/>
+        { /* Buscador de películas HTTP / Debemos instalar axios*/}
       </div>
     </div>
   );
