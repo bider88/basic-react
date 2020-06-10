@@ -24,6 +24,7 @@ import CheckBoxForm from './components/CheckBoxForm';
 import RequestsHTTP from './components/RequestsHTTP';
 import FilmSearchHTTP from './components/FilmSearchHTTP';
 import ChatLifeCycle from './components/ChatLifeCycle';
+import CounterLifecycle from './components/CounterLifecycle';
 
 function App() {
 
@@ -85,7 +86,7 @@ function App() {
         <CheckBoxForm/>
         { /* Etiqueta checkbox con form */}
       </div>
-      <SectionComponent type='warning' title='Peticiones HTTP' subtitle='Integrando peticiones HTPP con React' medium bold/>
+      <SectionComponent type='warning' title='Peticiones HTTP' subtitle='Integrando peticiones HTTP con React' medium bold/>
       <div className="container">
         <RequestsHTTP/>
         { /* Realizando peticiones HTTP */}
@@ -96,6 +97,8 @@ function App() {
       <div className="container">
         <ChatLifeCycle/>
         { /* Ciclo de vida getSnapShotBeforeUpdate / Debemos de instalar faker */}
+        <CounterLifecycle/>
+        { /* Contador implementando getDerivedStateFromProps */}
       </div>
     </div>
   );
