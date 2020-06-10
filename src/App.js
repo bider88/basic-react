@@ -23,6 +23,7 @@ import SelectForm from './components/SelectForm';
 import CheckBoxForm from './components/CheckBoxForm';
 import RequestsHTTP from './components/RequestsHTTP';
 import FilmSearchHTTP from './components/FilmSearchHTTP';
+import ChatLifeCycle from './components/ChatLifeCycle';
 
 function App() {
 
@@ -90,6 +91,11 @@ function App() {
         { /* Realizando peticiones HTTP */}
         <FilmSearchHTTP/>
         { /* Buscador de películas HTTP / Debemos instalar axios*/}
+      </div>
+      <SectionComponent type='dark' title='Ciclos de vida' subtitle='Interactuando con los ciclos de vida de un componente basado en clase' medium bold/>
+      <div className="container">
+        <ChatLifeCycle/>
+        { /* Ciclo de vida getSnapShotBeforeUpdate / Debemos de instalar faker */}
       </div>
     </div>
   );
