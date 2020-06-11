@@ -6,7 +6,7 @@ class FilmSearchHTTP extends Component {
     movie: {},
     loading: false
   }
-  url = 'http://www.omdbapi.com/?i=tt3896198&apikey=9cd7bf96'
+  url = 'https://www.omdbapi.com/?i=tt3896198&apikey=9cd7bf96'
 
   handleSubmit = async (event) => {
     event.preventDefault()
